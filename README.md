@@ -34,7 +34,7 @@ O repositório está organizado por pastas, cada uma correspondendo a um desafio
 2. **Navegue até a pasta do desafio**:
    Cada desafio está em uma pasta separada. Por exemplo, para acessar o primeiro desafio:
    ```bash
-   cd desafio-1-conta-terminal
+   cd conta-banco
    ```
 
 3. **Compile e execute o código**:
@@ -54,27 +54,17 @@ O repositório está organizado por pastas, cada uma correspondendo a um desafio
 
 ## 📝 Lista de Desafios
 
-Aqui estão os desafios incluídos neste repositório:
+Aqui estão alguns desafios incluídos neste repositório:
 
 1. **Conta Terminal**:
    - Simula a criação de uma conta bancária, interagindo com o usuário via terminal.
-   - [Ver código](/desafio-1-conta-terminal)
-
-2. **Nome da App** (exemplo):
-   - Descrição breve do desafio.
-   - [Ver código](/desafio-2-nome-da-app)
-
-3. **Desafio 3** (exemplo):
-   - Descrição breve do desafio.
-   - [Ver código](/desafio-3)
-
-*(Adicione mais desafios conforme for completando-os.)*
+   - [Ver código](/conta-banco)
 
 ---
 
 ## 🧩 Tecnologias Utilizadas
 
-- **Java**: Linguagem de programação utilizada para resolver os desafios.
+- **Java**: Linguagem de programação utilizada para resolver os desafios - Versão 17.
 - **Git e GitHub**: Para versionamento e armazenamento do código.
 - **IDEs**: Visual Studio Code, IntelliJ IDEA ou Eclipse para desenvolvimento.
 
