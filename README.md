@@ -27,8 +27,8 @@ O repositório está organizado por pastas, cada uma correspondendo a um desafio
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/trilha-java-basico-dio.git
-   cd trilha-java-basico-dio
+   git clone https://github.com/seu-usuario/trilha-java-basico.git
+   cd trilha-java-basico
    ```
 
 2. **Navegue até a pasta do desafio**:
