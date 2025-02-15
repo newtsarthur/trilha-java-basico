@@ -6,8 +6,12 @@ public class ContaTerminal {
     Scanner scanner = new Scanner(System.in);
 
     System.out.print("Por gentileza, digite o número da Agência: ");
-    String numero = scanner.nextLine();
+    String agencia = scanner.nextLine();
 
+    System.out.print("Agora, digite os números da sua conta: ");
+    int numero = scanner.nextInt();
+
+    
     //Exibir pelo scanner os valores digitados no terminal
 
     //Exibir a mensagem criada
