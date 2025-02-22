@@ -17,6 +17,11 @@ public class Embaralhar {
         total = ler.nextInt();
         ler.nextLine();
         numberInt = true;
+        
+        if(total == 0)
+        {
+          System.out.print("Por favor digite um número maior que 0!");
+        }
       } catch (Exception e) {
         System.out.println("Por favor digite um número inteiro para continuar! ");
         ler.nextLine();
