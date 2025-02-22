@@ -15,8 +15,16 @@ public class Embaralhar {
       try {
         System.out.print("Digite o total de amigos que você quer sortear: ");
         total = ler.nextInt();
-        ler.nextLine();
-        numberInt = true;
+
+        if(total == 0)
+        {
+          ler.nextLine();
+          numberInt = false;
+          System.out.println("Por favor, digite um número maior do que 0 para continuar!");
+        } else if (total > 0){
+          ler.nextLine();
+          numberInt = true;
+        }
       } catch (Exception e) {
         System.out.println("Por favor digite um número inteiro para continuar! ");
         ler.nextLine();
