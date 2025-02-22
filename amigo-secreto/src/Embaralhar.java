@@ -1,9 +1,10 @@
+import java.util.Random;
 import java.util.Scanner;
-
 
 public class Embaralhar {
   public static void main(String[] args) {
     Scanner ler = new Scanner(System.in);
+    Random random = new Random();
 
     System.out.print("Digite o total de amigos que você quer sortear: ");
     int total = ler.nextInt();
@@ -30,11 +31,12 @@ public class Embaralhar {
     {
       System.out.print(amigosTotal[i] + ", ");
     }
+    System.out.println(" ");
 
-    System.out.print("Sorteando...");
+    System.out.println("Sorteando...");
 
 
-    int amigoSecreto;
-    System.out.println("Parabéns seu amigo secreto é: " + amigoSecreto);
+    int amigoSecreto = random.nextInt(amigosTotal.length);
+    System.out.print("Parabéns seu amigo secreto é: " + amigosTotal[amigoSecreto] + "!");
   }
 }
