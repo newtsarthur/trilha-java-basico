@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Embaralhar {
   public static void main(String[] args) {
     Scanner ler = new Scanner(System.in);
-    
+
     System.out.print("Digite o total de amigos que você quer sortear: ");
     int total = ler.nextInt();
     ler.nextLine();
@@ -20,6 +20,12 @@ public class Embaralhar {
     } catch (Exception e) {
       // TODO: handle exception
       System.out.print("Erro");
+    }
+
+    System.out.print("Irei sortear os nomes: ");
+    for(int i = 0; i < amigosTotal.length; i++)
+    {
+      System.out.print(amigosTotal[i] + ", ");
     }
   }
 }
