@@ -35,7 +35,7 @@ public class Embaralhar {
   
           if(amigos.isEmpty())
           {
-            throw new Exception("O nome não pode ser vazio! ");
+            throw new Exception("O nome não pode ser vazio! Tente novamente!");
           }
   
           amigosTotal[x] = amigos;
