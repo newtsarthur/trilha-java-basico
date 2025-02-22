@@ -29,7 +29,12 @@ public class Embaralhar {
 
     for(int i = 0; i < amigosTotal.length; i++)
     {
-      System.out.print(amigosTotal[i] + ", ");
+      System.out.print(amigosTotal[i]);
+
+      if(i < amigosTotal.length - 1)
+      {
+        System.out.print(", ");
+      }
     }
     System.out.println(" ");
 
@@ -37,6 +42,7 @@ public class Embaralhar {
 
 
     int amigoSecreto = random.nextInt(amigosTotal.length);
+    System.out.println(amigoSecreto);
     System.out.print("Parabéns seu amigo secreto é: " + amigosTotal[amigoSecreto] + "!");
   }
 }
