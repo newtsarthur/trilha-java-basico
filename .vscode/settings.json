@@ -1,6 +1,7 @@
 {
   "java.project.sourcePaths": [
     "conta-banco",
-    "amigo-secreto/src"
+    "amigo-secreto/src",
+    "controle-fluxo/src"
   ]
 }
