@@ -35,6 +35,5 @@ public class Calculadora {
       resultado = (numOne / numTwo);
       System.out.println("A divisão dos valores deu: " + resultado);
     }
-
   }
 }
