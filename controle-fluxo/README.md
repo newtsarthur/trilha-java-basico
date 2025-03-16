@@ -1,100 +1,53 @@
 # Contador de Números
 
-Este é um projeto simples em Java que solicita dois números ao usuário e imprime uma contagem dos números entre eles. Se o segundo número for menor ou igual ao primeiro, o programa lança uma exceção personalizada.
+Este é um simples programa Java que solicita dois parâmetros ao usuário e realiza uma contagem progressiva a partir do primeiro parâmetro até o segundo parâmetro.
 
-## Funcionalidades
+## Como Funciona
 
-- Solicita dois números ao usuário.
-- Verifica se o segundo número é maior que o primeiro.
-- Se válido, imprime os números no intervalo entre os dois números.
-- Se inválido, lança uma exceção personalizada com uma mensagem de erro.
+1. O programa solicita ao usuário que insira dois números inteiros:
+   - O primeiro parâmetro é o número inicial da contagem.
+   - O segundo parâmetro é o número final da contagem.
 
-## Como Executar
+2. O programa verifica se o segundo parâmetro é maior que o primeiro. Caso contrário, uma exceção `ParametrosInvalidosExeption` é lançada.
 
-### Pré-requisitos
+3. Se os parâmetros forem válidos, o programa realiza a contagem progressiva e imprime cada número no console.
 
-- Java Development Kit (JDK) instalado (versão 8 ou superior).
-- Um terminal ou IDE para compilar e executar o código.
+## Exemplo de Uso
 
-### Passos
-
-1. **Clone o repositório:**
-
-   ```bash
-   git clone https://github.com/newtsarthur/trilha-java-basico.git
-   cd controle-fluxo
-   ```
-
-2. **Compile o código:**
-
-   No terminal, navegue até o diretório do projeto e execute o seguinte comando para compilar o código:
-
-   ```bash
-   javac Contador.java
-   ```
-
-3. **Execute o programa:**
-
-   Após compilar, execute o programa com o seguinte comando:
-
-   ```bash
-   java Contador
-   ```
-
-4. **Siga as instruções:**
-
-   - Digite o primeiro parâmetro (número inteiro).
-   - Digite o segundo parâmetro (número inteiro).
-   - O programa imprimirá os números no intervalo ou exibirá uma mensagem de erro se o segundo parâmetro for menor ou igual ao primeiro.
-
-### Exemplo de Execução
-
-#### Caso 1: Parâmetros válidos
-
-```
+```plaintext
 Digite o primeiro parâmetro: 3
 Digite o segundo parâmetro: 7
+Imprimindo o número 1
+Imprimindo o número 2
+Imprimindo o número 3
 Imprimindo o número 4
-Imprimindo o número 5
-Imprimindo o número 6
-Imprimindo o número 7
-```
-
-#### Caso 2: Parâmetros inválidos
-
-```
-Digite o primeiro parâmetro: 10
-Digite o segundo parâmetro: 5
-Erro! O segundo parâmetro deve ser maior que o primeiro parâmetro
 ```
 
 ## Estrutura do Código
 
-- **`Contador.java`**: Contém a lógica principal do programa, incluindo a leitura dos parâmetros, validação e contagem.
-- **`ParametrosInvalidosExeption.java`**: Define uma exceção personalizada para tratar casos em que o segundo parâmetro é menor ou igual ao primeiro.
+- **Contador.java**: Contém a classe principal `Contador` que gerencia a entrada do usuário e a lógica de contagem.
+- **ParametrosInvalidosExeption.java**: Define uma exceção personalizada para tratar casos em que o segundo parâmetro não é maior que o primeiro.
 
-## Exceção Personalizada
+## Como Executar
 
-A exceção `ParametrosInvalidosExeption` é lançada quando o segundo parâmetro é menor ou igual ao primeiro. Ela estende a classe `Exception` e permite a criação de mensagens de erro personalizadas.
+1. Certifique-se de ter o Java Development Kit (JDK) instalado em sua máquina.
+2. Compile o código-fonte usando o comando:
+   ```bash
+   javac Contador.java
+   ```
+3. Execute o programa com o comando:
+   ```bash
+   java Contador
+   ```
 
-```java
-class ParametrosInvalidosExeption extends Exception {
-  public ParametrosInvalidosExeption(String mensagem) {
-    super(mensagem);
-  }
-}
-```
+## Requisitos
+
+- Java JDK 8 ou superior.
 
 ## Contribuição
 
-Contribuições são bem-vindas! Se você quiser melhorar este projeto, siga os passos abaixo:
-
-1. Faça um fork do repositório.
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
-3. Commit suas mudanças (`git commit -m 'Adicionando nova feature'`).
-4. Push para a branch (`git push origin feature/nova-feature`).
-5. Abra um Pull Request.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorar o projeto.
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
